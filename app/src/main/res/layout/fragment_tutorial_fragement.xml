@@ -8,15 +8,7 @@
     <TextView android:layout_width="match_parent" android:layout_height="match_parent"
         android:id="@+id/Tutorial_view"
         android:autoText="false"
-        android:background="#a7000000" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Changeable"
-        android:id="@+id/textView"
-        android:layout_gravity="center" />
+        android:background="#d8fffb76" />
 
     <ImageButton
         android:layout_width="120dp"
@@ -33,9 +25,9 @@
     <ImageButton
         android:layout_width="120dp"
         android:layout_height="150dp"
-        android:id="@+id/imageButton"
+        android:id="@+id/img_button_share"
         android:layout_gravity="right|top"
-        android:src="@drawable/android_logo_green"
+        android:src="@drawable/img_share_green"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:clickable="false"
@@ -51,6 +43,18 @@
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:clickable="true"
+        android:scaleType="center"
+        android:cropToPadding="false" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:id="@+id/img_navigation"
+        android:layout_gravity="left|center_vertical"
+        android:src="@drawable/img_navigation_blue"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:clickable="false"
         android:scaleType="center"
         android:cropToPadding="false" />
 

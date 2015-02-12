@@ -119,7 +119,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                 case 0:
                     // The first section of the app is the most interesting -- it offers
                     // a launchpad into the other demonstrations in this example application.
-                    return new TutorialFragement();
+                    return new TutorialActivity();
 
                 default:
                     // The other sections of the app are dummy placeholders.
