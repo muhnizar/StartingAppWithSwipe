@@ -8,7 +8,7 @@
     <TextView android:layout_width="match_parent" android:layout_height="match_parent"
         android:id="@+id/Tutorial_view"
         android:autoText="false"
-        android:background="@android:color/white" />
+        android:background="#a7000000" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,29 +29,6 @@
         android:clickable="false"
         android:scaleType="center"
         android:cropToPadding="false" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tutorial 1"
-        android:id="@+id/textView2"
-        android:gravity="center|bottom"
-        android:textColor="#ffff1101"
-        android:paddingBottom="20dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tutorial 2"
-        android:id="@+id/textView3"
-        android:gravity="center|bottom"
-        android:textColor="#ffff1101"
-        android:paddingBottom="20dp"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal|top" />
 
     <ImageButton
         android:layout_width="120dp"
@@ -130,95 +107,11 @@
         android:layout_height="150dp"
         android:id="@+id/img_button_simple"
         android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/android_logo_green"
+        android:src="@drawable/img_email_white"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:clickable="true"
         android:scaleType="center"
         android:cropToPadding="false" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tutorial 3"
-        android:id="@+id/textView4"
-        android:gravity="center|bottom"
-        android:textColor="#ffff1101"
-        android:paddingBottom="20dp"
-        android:textStyle="bold"
-        android:layout_gravity="right|top" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tutorial 6"
-        android:id="@+id/textView5"
-        android:gravity="center|bottom"
-        android:textColor="#ffff1101"
-        android:paddingBottom="20dp"
-        android:textStyle="bold"
-        android:layout_gravity="right|center_vertical" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tutorial 5"
-        android:id="@+id/textView6"
-        android:gravity="center|bottom"
-        android:textColor="#ffff1101"
-        android:paddingBottom="20dp"
-        android:textStyle="bold"
-        android:layout_gravity="center" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tutorial 4"
-        android:id="@+id/textView7"
-        android:gravity="center|bottom"
-        android:textColor="#ffff1101"
-        android:paddingBottom="20dp"
-        android:textStyle="bold"
-        android:layout_gravity="left|center_vertical" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tutorial 6"
-        android:id="@+id/textView8"
-        android:gravity="center|bottom"
-        android:textColor="#ffff1101"
-        android:paddingBottom="20dp"
-        android:textStyle="bold"
-        android:layout_gravity="left|bottom" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tutorial 7"
-        android:id="@+id/textView9"
-        android:gravity="center|bottom"
-        android:textColor="#ffff1101"
-        android:paddingBottom="20dp"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal|bottom" />
-
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="150dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Tutorial 8"
-        android:id="@+id/textView10"
-        android:gravity="center|bottom"
-        android:textColor="#ffff1101"
-        android:paddingBottom="20dp"
-        android:textStyle="bold"
-        android:layout_gravity="right|bottom" />
 
 </FrameLayout>
