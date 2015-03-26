@@ -8,7 +8,7 @@
     </uses-permission>
     <uses-permission android:name="android.permission.READ_CONTACTS" >
     </uses-permission>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -31,6 +31,10 @@
         <activity
             android:name=".CallIntentsActivity"
             android:label="@string/title_activity_call_intents" >
+        </activity>
+        <activity
+            android:name="com.example.muhnizar.shopping.Catalog"
+            android:label="@string/title_activity_catalog" >
         </activity>
     </application>
 
