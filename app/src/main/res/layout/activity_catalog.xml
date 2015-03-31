@@ -14,7 +14,7 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="406dp"
-        android:id="@+id/listView"
+        android:id="@+id/listViewCatalog"
         android:clickable="true"
         android:layout_weight="0.97" />
 

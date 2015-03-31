@@ -33,7 +33,15 @@
             android:label="@string/title_activity_call_intents" >
         </activity>
         <activity
-            android:name="com.example.muhnizar.shopping.Catalog"
+            android:name="com.example.muhnizar.shoppingCart.Catalog"
+            android:label="@string/title_activity_catalog" >
+        </activity>
+        <activity
+            android:name="com.example.muhnizar.shoppingCart.ProductDetailsActivity"
+            android:label="@string/title_activity_product_details" >
+        </activity>
+        <activity
+            android:name="com.example.muhnizar.shoppingCart.CatalogActivity"
             android:label="@string/title_activity_catalog" >
         </activity>
     </application>

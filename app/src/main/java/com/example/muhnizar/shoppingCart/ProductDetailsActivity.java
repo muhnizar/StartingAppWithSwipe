@@ -1,4 +1,4 @@
-package com.example.muhnizar.shopping;
+package com.example.muhnizar.shoppingCart;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -7,19 +7,19 @@ import android.view.MenuItem;
 
 import com.example.muhnizar.startingappwithswipeview.R;
 
-public class Catalog extends ActionBarActivity {
+public class ProductDetailsActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_catalog);
+        setContentView(R.layout.activity_product_details);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_catalog, menu);
+        getMenuInflater().inflate(R.menu.menu_product_details, menu);
         return true;
     }
 

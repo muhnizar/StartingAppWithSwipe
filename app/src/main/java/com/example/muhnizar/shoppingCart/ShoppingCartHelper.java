@@ -1,4 +1,4 @@
-package com.example.muhnizar.shopping;
+package com.example.muhnizar.shoppingCart;
 
 import android.content.res.Resources;
 
@@ -9,10 +9,10 @@ import java.util.Vector;
 
 public class ShoppingCartHelper {
 
-    private List<Product> catalog;
+    private static List<Product> catalog;
     private static List<Product> cart;
 
-public List<Product> getCatalog(Resources res){
+public static List<Product> getCatalog(Resources res){
 
     if (catalog == null){
         catalog = new Vector<Product>();
