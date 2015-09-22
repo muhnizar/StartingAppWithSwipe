@@ -4,6 +4,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.muhnizar.startingappwithswipeview.R;
+
 import java.util.List;
 
 public class ProductAdapter extends BaseAdapter {
@@ -19,22 +24,53 @@ public class ProductAdapter extends BaseAdapter {
     }
 
     @Override
+    public int getCount() {
+        return mProductList.size();
+    }
+
+    @Override
     public Object getItem(int position) {
-        return null;
+        return mProductList.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
-    }
-
-    @Override
-    public int getCount() {
-        return 0;
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+        final ViewItem item;
+
+        if (convertView == null) {
+            convertView = mInflater.inflate(R.layout.item, null);
+            item = new ViewItem();
+
+            item.productImageView = (ImageView) convertView
+                    .findViewById(R.id.imageViewItem);
+
+            item.productTitle = (TextView) convertView
+                    .findViewById(R.id.textViewItem);
+
+            item.productQuantity = (TextView) convertView
+                    .findViewById(R.id.textViewQuantity);
+
+            convertView.setTag(item);
+        } else {
+            item = (ViewItem) convertView.getTag();
+        }
+
+        Product curProduct = mProductList.get(position);
+
+        item.productImageView.setImageDrawable(curProduct.productImage);
+        item.productTitle.setText(curProduct.title);
+
+        return convertView;
+    }
+
+    private class ViewItem{
+        ImageView productImageView ;
+        TextView productTitle;
+        TextView productQuantity;
     }
 }

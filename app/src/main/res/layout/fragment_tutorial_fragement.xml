@@ -62,7 +62,7 @@
     <ImageButton
         android:layout_width="120dp"
         android:layout_height="150dp"
-        android:id="@+id/imageButton"
+        android:id="@+id/img_shopping_cart"
         android:layout_gravity="center"
         android:src="@drawable/img_shopping"
         android:adjustViewBounds="true"

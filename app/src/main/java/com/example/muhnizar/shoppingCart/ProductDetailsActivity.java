@@ -1,11 +1,15 @@
 package com.example.muhnizar.shoppingCart;
 
+import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 import com.example.muhnizar.startingappwithswipeview.R;
+
+import java.util.List;
 
 public class ProductDetailsActivity extends ActionBarActivity {
 
@@ -13,6 +17,18 @@ public class ProductDetailsActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_details);
+
+        // get all the resource from ShoppingCartHelper
+        List<Product> catalog =  ShoppingCartHelper.getCatalog(getResources());
+
+        // get intent if there is any information from EXTRA
+        int productIndex = getIntent().getExtras().getInt(ShoppingCartHelper.PRODUCT_INDEX);
+
+        // set the proper image and text
+        //ImageView productImageView =  findViewById(R.id
+
+
+
     }
 
 

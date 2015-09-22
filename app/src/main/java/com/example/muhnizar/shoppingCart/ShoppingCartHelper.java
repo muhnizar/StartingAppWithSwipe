@@ -12,6 +12,8 @@ public class ShoppingCartHelper {
     private static List<Product> catalog;
     private static List<Product> cart;
 
+    public static final String PRODUCT_INDEX = "PRODUCT_INDEX";
+
 public static List<Product> getCatalog(Resources res){
 
     if (catalog == null){
@@ -28,7 +30,6 @@ public static List<Product> getCatalog(Resources res){
         if(cart == null) {
             cart = new Vector<Product>();
         }
-
         return cart;
     }
 }
