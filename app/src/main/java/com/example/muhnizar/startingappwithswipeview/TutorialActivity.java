@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.muhnizar.shoppingCart.CatalogActivity;
+
 
 public class TutorialActivity extends Fragment {
 
@@ -25,6 +27,16 @@ public class TutorialActivity extends Fragment {
 
         View imgButtonSimple =  rootView.findViewById(R.id.img_button_simple);
         View imgButtonShare =  rootView.findViewById(R.id.img_button_share);
+        View imgButtonShopping =  rootView.findViewById(R.id.img_shopping_cart);
+
+
+        imgButtonShopping.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), CatalogActivity.class);
+                startActivity(intent);
+            }
+        });
 
         imgButtonSimple.setOnClickListener(new View.OnClickListener() {
 
